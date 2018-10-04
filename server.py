@@ -3,6 +3,7 @@ from flask import Flask, make_response, request, current_app, Request, jsonify
 app = Flask(__name__)
 app.debug = True
 
+# will be handling payloads
 @app.route("/payload", methods=['POST'])
 def handlePost():
 	print(request)
